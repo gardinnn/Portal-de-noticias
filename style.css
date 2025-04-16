@@ -13,7 +13,14 @@
     --tcp-color: #F1F5F9;
     --tcs-color: #CBD5E1;
 
-    --text-family: "Archivo", sans-serif;
+    --font-family: "Archivo", sans-serif;
+    --h1: 800 24px/135% var(--font-family);
+    --h2: 800 16px/140% var(--font-family);
+    --h3: 800 14px/140% var(--font-family);
+    --text-span: 600 14px/145% var(--font-family);
+    --text: 400 16px/140% var(--font-family);
+    --text-sm: 400 14px/160% var(--font-family);
+
 }
 
 *{
@@ -23,6 +30,59 @@
 }
 
 body{
+    font: var(--text);
     color: var(--tcp-color);
     background-color: var(--bg-color);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: var(--bcl-color);
+}
+
+h1,h2,h3{
+    font: inherit;
+}
+
+.container{
+    max-width: 1280px;
+    padding-inline: 32px;
+    margin-inline: auto;
+}
+
+header #primary{
+    padding-block: 20px;
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    /* nesting css */
+    div:nth-child(2){
+        margin-inline: auto;
+    }
+
+    div:nth-child(3){
+        justify-self: end;
+    }
+}
+
+#secundary{
+    padding-block: 14px;
+    border: 1px solid var(--st-color);
+    border-inline: none;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-col{
+    grid-auto-flow: column;
 }
