@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    /* produto */
+    --bcl-color: #60A5FA;
+    --bcd-color: #1D4ED8;
+    /* base */
+    --bg-color: #0F172A;
+    --st-color: #1E293B;
+    /* textos */
+    --tcp-color: #F1F5F9;
+    --tcs-color: #CBD5E1;
+
+    --text-family: "Archivo", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--tcp-color);
+    background-color: var(--bg-color);
+}
