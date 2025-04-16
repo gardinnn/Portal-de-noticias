@@ -98,6 +98,7 @@ main{
     .card{
         position: relative;
         overflow: hidden;
+
         &::before{
             content: "";
             position: absolute;
@@ -105,7 +106,30 @@ main{
             top: 50%;
             background: linear-gradient(to bottom, transparent, #020617);
         }
+
+        figcaption{
+            position: absolute;
+            bottom: 0;
+
+            padding: 24px;
+            
+            h2{
+                margin-bottom: 8px;
+            }
+        }
     }
+}
+
+.content-tag{
+    display: inline-block;
+    background-color: var(--bcd-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font: 500 10px/1.2 var(--font-family);
+    text-transform: uppercase;
+    letter-spacing: 0.04cm;
+    color: var(--tcp-color);
+    box-sizing: 0px 4px 16px rgba(2, 6, 23, 0.25);
 }
 
 
@@ -124,4 +148,20 @@ main{
 
 .gap-16{
     gap: 16px;
+}
+
+.text-2xl{
+    font: var(--h1);
+}
+
+.text-xl{
+    font: var(--h2);
+}
+
+.text-lg{
+    font: var(--h3);
+}
+
+.text-sm{
+    font: var(--text-sm);
 }
